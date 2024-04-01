@@ -37,7 +37,7 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
-    jekyll-theme-leap-day (0.2.0)
+    jekyll-theme-dinky (0.2.0)
       jekyll (> 3.5, < 5.0)
       jekyll-seo-tag (~> 2.0)
     jekyll-watch (2.2.1)
@@ -76,7 +76,7 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
   jekyll-feed (~> 0.12)
-  jekyll-theme-leap-day
+  jekyll-theme-dinky
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
