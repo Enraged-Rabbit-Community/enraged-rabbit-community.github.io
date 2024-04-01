@@ -1,0 +1,29 @@
+layout: default
+name: ERCF Documentation
+title: ERCF Documentation
+description: ERCF Official and Community Documentation
+logo: "/assets/ercf_logo.png"
+markdown: kramdown
+theme: jekyll-theme-leapday
+color_scheme: voron-dark
+search_enabled: true
+search.button: true
+aux_links:
+  "ERCF Documentation on GitHub":
+    - "https://github.com/Enraged-Rabbit-Community/enraged-rabbit-community.github.io"
+  "VoronDesign Home":
+    - "https://ercf.community/"
+
+callouts:
+  warning:
+    title: Warning
+    color: voron-red
+  note:
+    title: Note
+    color: grey-lt
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "10.2.4"
+
