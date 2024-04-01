@@ -21,9 +21,7 @@
 title: ERCF Community Site
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  We\'re working with the community to build an open-source MMU. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We're working with the community to build the best open-source MMU possible.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ercf.community" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
