@@ -30,7 +30,7 @@ url: "https://ercf.community" # the base hostname & protocol for your site, e.g.
 github_username:  Miriax
 
 # Build settings
-theme: leapday
+theme: leap-day
 plugins:
   - jekyll-feed
 
