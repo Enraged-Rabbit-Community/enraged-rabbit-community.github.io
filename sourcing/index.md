@@ -7,32 +7,89 @@ nav_order: 4
 
 # Sourcing Information
 
-## Bill of Materials and Source Guide
+## Bill of Materials
 
-The Bill of Materials (BOM) is generated from the [ERCF website](https://ercf.community).  Select the printer to be built, then select 'Configurator' and choose from the parameters.  A customized BOM will be presented.  The BOM is considered the absolute guide for what is actually required to build the printer.
+The Bill of Materials (BOM) is available [here](https://docs.google.com/spreadsheets/d/1HtVIu4yqzS6xJQr63-JKtMAh4Xq7wbtWPFeuiCnrnnE/).  Choose your desired number of channels, and the BOM spreadsheet will adjust the lengths and number of parts needed.  The BOM is considered the absolute guide for what is actually required to build the ERCF. 
 
-The Sourcing Guide is made available at the same time as the customized BOM.  It is a list of Voron maintained references to where to purchase the various components listed on the BOM for the different printers.  _The sourcing guide is not customized to the printer.  All quantities are mostly incorrect._  There are additional tabs at the bottom of the sourcing guide for optional or additional components.
+## Self-Sourcing Parts
+We support between 4 and 12 channels officially, but users have reported ERCFv1 up to 16 channels. Kits and certain accessories like the LED PCBs are designed around groups of 4 channels, so the primary build sizes we recommend are 4, 8, and 12. Most of our instructions depict 8 channels, and 8 channels is reportedly the most popular size to build in the community. Sourcing for each item is listed on the BOM spreadsheet with links to where to purchase the various components.  _The sourcing guide links are not customized to the ERCF.  All quantities are mostly incorrect._ 
 
-## Printing Parts
+*When purchasing small items, it is recommended to buy extras (round up). Having a few extra screws or connectors around may actually help you later.*
 
-### Material
+_Note:_ The generated BOM part numbers for Misumi extrusions are the exact part numbers.  Enter them into Misumi's website and they will return exactly what needs to be ordered, including any extra drilling or tapping operations.
 
-Please see the [materials guide](./materials.md) for more detailed information.
+More sourcing information can be found in the [sourcing FAQ](./sourcing_faq.md)
 
-### Colors and Quantities
+## Kit Vendors
+<table>
+<tr>
+<td width=25%><img src="Assets/Certified.jpg" alt='Vendor Certification'></td>
+<td>
+These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a V2 RC1 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
+<p>
+<ul>
+  <li> <strong>Certified - Siboor</strong>
+  </li>
+  <li> <strong>Certified - Triangle Labs</strong>
+  </li>
+  <li> <strong>Certified - Seleadlabs</strong>
+  </li>
+  <li> <strong>Certified -  Makerpanda</strong>
+  </li>
+  <li> <strong>Certified -  Fysetc</strong>
+  </li>
+  <li> Pending Certification - LDO Motors
+  </li>
+  <li> Application Under Review/Pending Certification - Dodo 3D Labs
+  </li>
+  
+  
+  <br>
+  <p>
+  A list of more official and certified vendors is on the way... stay tuned!
+</td>
+</tr>
+</table>
+
+**Manufacturers:**
+_If you want to be included, please contact us. We are happy to validate your kit/parts and then add you to the list._
+
+<br>
+
+
+# Printing Parts
+
+## Material
+
+ERCF is prototyped and tested in, and designed to use ABS. In theory, you can use PETG or PLA for most parts because they will not experience high heat, but many user attempts posted in the Discord prove that the resulting parts are slightly out of spec due to the difference in shrinkage for the different plastic types. One user reported spending a week attempting to dial in SLA settings for ERCF parts, to no avail. So please, don't attempt to print ERCF in anything but ABS.
+
+## Colors and Quantities
 
 The recommended accent parts are denoted with a "[a]_" in the filename. Many of these are still functional in nature and should still follow the recommended print settings.
 
 Filenames that end with "_x#", indicate that the part must be printed multiple times (ie. x2, x4, etc.)
 
-Typical printers require approximately 1.5kg of the primary color and 0.3kg of the alternate color, assuming no failed or reprinted parts. Most people end up reprinting a few parts and a few mods, so plan on 2kg of the primary color. Refer to the table [here](./sourcing_faq.md) for your specific model.
+Light pipes for use with LEDs require the use of a clear/transparent plastic, and are denoted with "[c]_" at the beginning of the filename.
 
-For information on selecting parts to print, clarification of colors and quantities, and even what parts PIF will provide, see the [Printed Part Reference](https://docs.google.com/spreadsheets/d/1njgHapSZLiQHobrEVkeuAuhhDsXzFOJOiIpvfVFeGxQ/edit?usp=sharing) spreadsheet.
+Shrouds for the LEDs and Encoder require opaque plastic to keep light from transmitting, preferably black. These parts are denoted with "[o]_" at the beginning of the filename. 
 
-### Print Settings
+There are optional multimaterial parts denoted by "[mm]_" at the beginning of the filename. 
 
-These are the recommended settings.
+A typical 8-channel ERCF requires approximately 0.5kg of the primary color and 0.8kg of the accent color, assuming no failed or reprinted parts. If you're using the recommended ERCT buffer system, it uses an additional 0.3kg of the primary color and 0.7kg of the accent color, so plan on 2kg of the accent color.
 
+For information on selecting which parts to print, see the [Printed Parts Tracker](https://docs.google.com/spreadsheets/d/1h1bJurR6Z8Ou36c5U9cWmqI86tXKlWrcZrWrHgGN13A/edit?usp=sharing) spreadsheet.
+
+## Print Settings
+
+ERCF requires that you have your printer calibrations all dialed in - please refer to the [Ellis print tuning guide](https://ellis3dp.com/Print-Tuning-Guide/). 
+* Good, evenly adhering first layers
+* Filament temperature set for your printer, environment, and brand of ABS
+* Layer times and cooling tuned for your ABS so that you have the ability to print small parts and bridge at least 20mm
+* Extrusion Multiplier (EM) tuned in so that you can consistently print 0.1mm gaps between walls
+
+It is **MANDATORY** to print `Tools/Calib_Test.stl` and a `Filament_Blocks/[a]_Tophat_xN.stl` to make sure you are dialed-in enough to print ERCF! Many, many issues are caused by improperly-printed parts, so save yourself the trouble!
+
+These are the recommended settings.   
 - Layer height: 0.2mm
 - Extrusion width: 0.4mm, forced
 - Infill percentage: 40%
@@ -41,60 +98,36 @@ These are the recommended settings.
 - Solid top/bottom layers: 5
 - Supports: NONE
 
-## Ordering Parts
-
-When purchasing, the sourcing guide and the bill of materials (BOM) are not the same.  Be sure to refer to the BOM for all quantities.  If unclear please see the [explanation of differences](#bill-of-materials-and-source-guide).
-
-*When purchasing small items, it is recommended to buy extras (round up). Having a few extra screws or connectors around may actually help you later.*
-
-_Note:_ The generated BOM part numbers for Misumi extrusions are the exact part numbers.  Enter them into Misumi's website and they will return exactly what needs to be ordered, including any extra drilling or tapping operations.
-
-There are a growing number of suppliers that are assembling kits to build Voron printers.  Outside of the sourcing guide, Voron does not implicitly endorse any specific vendor of Voron kits.
-
-### Parts Selection / Alternates
-
-When choosing extrusions, V-slot extrusions are discouraged.  This is due to the use of the MGN9 linear rail as the V-slot and width of the rail are very close and cause misalignment.  Vendors of extrusions other than Misumi are generally fine but verification of the extrusion profile is highly recommended to ensure they will fit with the rails.
-
-If trying to keep costs down, the display / screen on any printer is entirely optional. Many builders solely use the web interface.
-
-Builders are welcome to make substitutions as they see fit but this printer is not a race to be as cheap as possible. It is designed to compete with many other high-end printers while still being affordable. Substituting parts may also have other unintended side effects and cause compatibility issues. Please feel free to ask for advice before any substitutions are made.
-
-More sourcing information can be found in the [sourcing FAQ](./sourcing_faq.md)
-
-## Unsupported Configurations
-
-## Tools
+# Tools
 
 ### Required Tools
 
 _It might be possible to build, troubleshoot, and tune an ERCF without this list, but it will be much harder._
 
-* Set of metric hex wrenches ("keys") from at least 1.5mm - 5mm. (Wiha, Wera, or Bondhus are preferred)
+* Set of metric hex wrenches ("keys") from at least 1.5mm - 3mm. Wiha, Wera, or Bondhus are top-notch tools.
 * Standard screwdrivers
-* Wire strippers from 16 gauge (1.25mm) to 26 gauge (0.405mm)
-* Diagonal wire cutters, small
-* Soldering iron (solder helpful)
-* Multimeter
 * Metric calipers, 6"/150mm
-* Crimpers
-  * Molex Crimpers (Good: IWISS IWS-3220M, Better: Engineer PA-09, Best: Molex Crimper)
-  * Ferrule Crimpers
-  * Terminal Crimpers
+
+_If you're not purchasing a kit or pre-made wiring loom, you will need these tools to wire your ERCF:_
+
+* Diagonal wire cutters, small
+* Multimeter
+* Wire strippers from 22 gauge (0.644mm) to 26 gauge (0.405mm)
+* Soldering iron and solder
+* Molex Crimpers (Good: IWISS IWS-3220M, Better: Engineer PA-09, Best: Molex Crimper)
 
 ### Helpful / Nice To Have Tools
 
-_These make Voron life a little nicer._
+_These make ERCF life a little nicer._
 
 * Needle nose pliers
 * Tweezers
 * Small "X-Acto" knife
-* Machinist scale / ruler, either 6"/150mm or 12"/300mm
-* Machinist square, 4"/100mm or larger (Sometimes called "locksmith angles", see DIN 875)
 * Deburring tool
 * Small files
 * Small flashlight
-* Precision screwdriver set
 * Heat shrink labeler
+
 
 ---
 
