@@ -21,12 +21,9 @@ _Note:_ The generated BOM part numbers for Misumi extrusions are the exact part 
 More sourcing information can be found in the [sourcing FAQ](./sourcing_faq.md)
 
 ## Kit Vendors
-<table>
-<tr>
-<td width=25%><img src="assets/Certified.jpg" alt='Vendor Certification'></td>
-<td>
+
+<img src="/assets/Certified.jpg" alt='Vendor Certification' width=25% >
 These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a V2 RC1 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
-<p>
 <ul>
   <li> <strong>Certified - Siboor</strong>
   </li>
@@ -42,14 +39,9 @@ These kits and specialty parts will have been checked by us and meet good qualit
   </li>
   <li> Application Under Review/Pending Certification - Dodo 3D Labs
   </li>
-  
-  
+</ul>  
   <br>
-  <p>
   A list of more official and certified vendors is on the way... stay tuned!
-</td>
-</tr>
-</table>
 
 **Manufacturers:**
 _If you want to be included, please contact us. We are happy to validate your kit/parts and then add you to the list._
