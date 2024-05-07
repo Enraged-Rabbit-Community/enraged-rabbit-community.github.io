@@ -23,7 +23,7 @@ More sourcing information can be found in the [sourcing FAQ](./sourcing_faq.md)
 ## Kit Vendors
 <table>
 <tr>
-<td width=25%><img src="Assets/Certified.jpg" alt='Vendor Certification'></td>
+<td width=25%><img src="assets/Certified.jpg" alt='Vendor Certification'></td>
 <td>
 These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a V2 RC1 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
 <p>
