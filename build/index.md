@@ -2,7 +2,7 @@
 layout: default
 title: The Build
 has_children: true
-nav_order: 5
+nav_order: 3
 ---
 
 # The Build
