@@ -7,6 +7,10 @@ body, CODE{
 H1, H2, H3, H4, H5{
 	color: #70AD47;
 }
-A, A.buttons{
+A{
 	color:#FF9933;
+}
+
+A.buttons{
+	background-color:#FF9933;
 }
