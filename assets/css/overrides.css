@@ -12,5 +12,7 @@ A{
 }
 
 header li{
+	background:none;
 	background-color:#FF9933;
+	box-shadow:none;
 }
