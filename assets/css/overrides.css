@@ -1,4 +1,12 @@
 body{
-    background-color: #666666;
+    background-color: #333333;
+}
+body. CODE{	
     color: #FDFDFB; 
+}
+H1, H2, H3, H4, H5{
+	color: #70AD47;
+}
+A{
+	color:#FF9933;
 }
